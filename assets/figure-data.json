@@ -1,0 +1,189 @@
+{
+  "source": "results/summary.json",
+  "source_sha256": "df6f21542def1f6fe0213b767c430918707d79e37a98dfd3e1c40700e1d58d15",
+  "measures": [
+    {
+      "condition_id": "luna_decisions_choice",
+      "display_name": "OpenAI GPT-6 Luna Decisions",
+      "color": "#234E70",
+      "balanced_accuracy_mean": 0.9049177576367908,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 1129,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 316,
+          "denominator": 662,
+          "value": 0.4773413897280967
+        },
+        "name_property_pressure": {
+          "numerator": 470,
+          "denominator": 662,
+          "value": 0.7099697885196374
+        },
+        "urgency_saturation": {
+          "numerator": 338,
+          "denominator": 662,
+          "value": 0.5105740181268882
+        }
+      }
+    },
+    {
+      "condition_id": "luna_chat",
+      "display_name": "OpenAI GPT-6 Luna (chat)",
+      "color": "#087F8C",
+      "balanced_accuracy_mean": 0.9864887546156428,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 161,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 39,
+          "denominator": 662,
+          "value": 0.05891238670694864
+        },
+        "name_property_pressure": {
+          "numerator": 80,
+          "denominator": 662,
+          "value": 0.12084592145015106
+        },
+        "urgency_saturation": {
+          "numerator": 42,
+          "denominator": 662,
+          "value": 0.0634441087613293
+        }
+      }
+    },
+    {
+      "condition_id": "jev_choice",
+      "display_name": "TypeSafe Jev 1.13",
+      "color": "#7C3AED",
+      "balanced_accuracy_mean": 0.9832158442430345,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 200,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 3,
+          "denominator": 662,
+          "value": 0.004531722054380665
+        },
+        "name_property_pressure": {
+          "numerator": 55,
+          "denominator": 662,
+          "value": 0.08308157099697885
+        },
+        "urgency_saturation": {
+          "numerator": 142,
+          "denominator": 662,
+          "value": 0.21450151057401812
+        }
+      }
+    },
+    {
+      "condition_id": "jev_114_choice",
+      "display_name": "TypeSafe Jev 1.14",
+      "color": "#2563EB",
+      "balanced_accuracy_mean": 0.9863097896084186,
+      "joint_intended": 7944,
+      "joint_usable": 7939,
+      "joint_errors": 163,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 5,
+          "denominator": 662,
+          "value": 0.0075528700906344415
+        },
+        "name_property_pressure": {
+          "numerator": 105,
+          "denominator": 660,
+          "value": 0.1590909090909091
+        },
+        "urgency_saturation": {
+          "numerator": 53,
+          "denominator": 661,
+          "value": 0.08018154311649017
+        }
+      }
+    },
+    {
+      "condition_id": "pplx_decider_12_choice",
+      "display_name": "Perplexity Decider V1.2",
+      "color": "#00856A",
+      "balanced_accuracy_mean": 1.0,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 0,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 0,
+          "denominator": 662,
+          "value": 0.0
+        },
+        "name_property_pressure": {
+          "numerator": 0,
+          "denominator": 662,
+          "value": 0.0
+        },
+        "urgency_saturation": {
+          "numerator": 0,
+          "denominator": 662,
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "condition_id": "clef_choice",
+      "display_name": "Cloudflare Clef",
+      "color": "#B45309",
+      "balanced_accuracy_mean": 0.9498992950654582,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 597,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 163,
+          "denominator": 662,
+          "value": 0.24622356495468278
+        },
+        "name_property_pressure": {
+          "numerator": 225,
+          "denominator": 662,
+          "value": 0.33987915407854985
+        },
+        "urgency_saturation": {
+          "numerator": 209,
+          "denominator": 662,
+          "value": 0.3157099697885196
+        }
+      }
+    },
+    {
+      "condition_id": "clef_flash_choice",
+      "display_name": "Cloudflare Clef-flash",
+      "color": "#BE185D",
+      "balanced_accuracy_mean": 0.9128063108425647,
+      "joint_intended": 7944,
+      "joint_usable": 7944,
+      "joint_errors": 1017,
+      "false_acceptance_N1_S0": {
+        "neutral_direct": {
+          "numerator": 408,
+          "denominator": 662,
+          "value": 0.6163141993957704
+        },
+        "name_property_pressure": {
+          "numerator": 243,
+          "denominator": 662,
+          "value": 0.36706948640483383
+        },
+        "urgency_saturation": {
+          "numerator": 355,
+          "denominator": 662,
+          "value": 0.5362537764350453
+        }
+      }
+    }
+  ],
+  "status": "observed_exploratory_model_measurements"
+}

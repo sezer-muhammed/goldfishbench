@@ -1,0 +1,20 @@
+{
+  "source": "results/summary.json",
+  "source_sha256": "df6f21542def1f6fe0213b767c430918707d79e37a98dfd3e1c40700e1d58d15",
+  "script": "assets/render_figures.py",
+  "script_sha256": "bd985f5bf33313357992431d96e38253b93532597025b535969b1c7271b555dd",
+  "matplotlib": "3.11.0",
+  "numpy": "2.3.5",
+  "figures": {
+    "wrong-recipient-errors.svg": "f4eac7593bd8d8a0ba7e01ed6a7ef18fe3dcb63c2534edc1d5e58159b972ed33",
+    "wrong-recipient-errors.png": "e296464a57e469abe88ee07778f99a8b7d292a597f6ad0bf1a826ee702fcf7ad",
+    "balanced-accuracy.svg": "e4fb8e79575618f499c87a55038b2ad6d1b906675a125a510fd597ba8fd8a156",
+    "balanced-accuracy.png": "1cd0892dd39f9d0e89cce343f823f699f9f9b5ded1776d340b7583533a100f21",
+    "figure-data.json": "ea8fd07b7ddc20ec2ec5e37c0a9e65e74c5ee8c3aa8bc17264cc7562ecb05848"
+  },
+  "notes": [
+    "No simulated values. No live model calls.",
+    "Both plots use the frozen released scientific summary.",
+    "Figure-data records all chart values and exact denominators."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "alternative_domain_shards": "data/domains/*.jsonl",
+  "compression_is_deterministic": true,
+  "dataset_canonical_jsonl_sha256": "98d53631d6cfc220890d7220ca4bd9264499484c0c1149ceacc2b3dee9ec21b0",
+  "dataset_license": "CC-BY-4.0",
+  "export": "Goldfish-only field-selection derivative of the frozen measured inventory; visible payloads, IDs, ASTs, labels, relations, splits and within-family grouping are unchanged.",
+  "file_digests": {
+    "data/domains/customer_support.jsonl": {
+      "bytes": 19220200,
+      "sha256": "59bf71cdc100fed6ae4cdeb036d859b6487edf59f9065dfdf2f8ceb1a29e76d7"
+    },
+    "data/domains/document_access.jsonl": {
+      "bytes": 18306302,
+      "sha256": "97b09a2685f43868bec3b84269709bc38490c6f6bb7b77cb7344391c58cca665"
+    },
+    "data/domains/internal_it.jsonl": {
+      "bytes": 19340832,
+      "sha256": "e9061a20e8e9476e0fd4ff82f28cd1041f69eb562c2c50dc7b83660bb056a972"
+    },
+    "data/domains/workflow_escalation.jsonl": {
+      "bytes": 18653246,
+      "sha256": "e2545804b5c64e3e28fd9f1bcaffabc2b78a2dec903c71bbbc32b3ca0cdc9375"
+    },
+    "data/goldfishbench.jsonl.gz": {
+      "bytes": 1616882,
+      "sha256": "e31ac9ebb697a040bd6d543fc1a28851dfcd152e6ce2756f5bce425b838d2651"
+    },
+    "data/sample.jsonl": {
+      "bytes": 46588,
+      "sha256": "21edf50ecde5d748cf1309475aa61a9182b1be63667d026db996aa8d161c827b"
+    },
+    "data/statistics.json": {
+      "bytes": 3445,
+      "sha256": "4344f82011d89eb9a9d29e958c8a66eeb09440b6311ed23013f9f5f6ae7e3f09"
+    }
+  },
+  "full_dataset_path": "data/goldfishbench.jsonl.gz",
+  "release_version": "1.0.0",
+  "sample_is_subset_not_additional_data": true,
+  "sample_path": "data/sample.jsonl",
+  "source_combined_input_sha256": "ed694eed7b75ee1d863f5eb5ba877aaeaef7a9de4978e483e49536062c89bd94"
+}

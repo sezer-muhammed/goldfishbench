@@ -1,0 +1,60 @@
+{
+  "status": "PASS_PUBLISHED_POINT_ESTIMATES",
+  "models": [
+    {
+      "condition_id": "luna_decisions_choice",
+      "usable_answers": 11136,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 1129,
+      "equal_rendering_mean_balanced_accuracy": 0.9049177576367908
+    },
+    {
+      "condition_id": "luna_chat",
+      "usable_answers": 11136,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 161,
+      "equal_rendering_mean_balanced_accuracy": 0.9864887546156428
+    },
+    {
+      "condition_id": "jev_choice",
+      "usable_answers": 11136,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 200,
+      "equal_rendering_mean_balanced_accuracy": 0.9832158442430345
+    },
+    {
+      "condition_id": "jev_114_choice",
+      "usable_answers": 11127,
+      "joint_usable": 7939,
+      "joint_semantic_errors": 163,
+      "equal_rendering_mean_balanced_accuracy": 0.9863097896084186
+    },
+    {
+      "condition_id": "pplx_decider_12_choice",
+      "usable_answers": 11136,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 0,
+      "equal_rendering_mean_balanced_accuracy": 1.0
+    },
+    {
+      "condition_id": "clef_choice",
+      "usable_answers": 11136,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 597,
+      "equal_rendering_mean_balanced_accuracy": 0.9498992950654582
+    },
+    {
+      "condition_id": "clef_flash_choice",
+      "usable_answers": 11134,
+      "joint_usable": 7944,
+      "joint_semantic_errors": 1017,
+      "equal_rendering_mean_balanced_accuracy": 0.9128063108425647
+    }
+  ],
+  "conditions_checked": 21,
+  "focal_rendering_contrasts_checked": 14,
+  "new_model_calls": 0,
+  "bootstrap_intervals_recomputed": false,
+  "historical_648_endpoint_recomputed": false,
+  "note": "The frozen scientific summary separately preserves uncertainty sensitivities and the historical endpoint."
+}

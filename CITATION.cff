@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite GoldfishBench when using the dataset, evaluation software or results."
+title: "GoldfishBench: Separating Intervention Need from the Suitability of a Named Recipient"
+type: dataset
+version: 1.0.0
+date-released: 2026-10-22
+authors:
+  - family-names: Sezer
+    given-names: Muhammed Izzet
+    email: i@imsezer.com
+repository-code: "https://github.com/sezer-muhammed/goldfishbench"
+url: "https://github.com/sezer-muhammed/goldfishbench"
+license: CC-BY-4.0
+keywords:
+  - decision models
+  - recipient suitability
+  - routing policy
+  - rhetorical pressure
+  - benchmark
+abstract: "An exploratory controlled benchmark testing whether models distinguish intervention need from the suitability of the specific proposed recipient."

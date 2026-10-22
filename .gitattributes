@@ -1,0 +1,4 @@
+# Preserve generated vector output and unmodified upstream class/style bytes.
+assets/*.svg -whitespace
+paper/IEEEtran.cls -whitespace
+paper/IEEEtran.bst -whitespace

@@ -1,0 +1,366 @@
+{
+  "version": "1.0.0",
+  "scope": "GoldfishBench public dataset, measured answer snapshots, paper and offline evaluator",
+  "question_rows": 11136,
+  "scenario_families": 662,
+  "semantic_worlds": 2648,
+  "joint_questions": 7944,
+  "component_questions": 3192,
+  "model_conditions": 7,
+  "intended_model_answers": 77952,
+  "usable_model_answers": 77941,
+  "human_semantic_reviews_completed": 0,
+  "confirmatory": false,
+  "arxiv_identifier": null,
+  "arxiv_status": "Author reports endorsement pending; no public identifier claimed.",
+  "new_model_calls": 0,
+  "unit_tests_passed": 34,
+  "all_seven_point_estimates_recomputed": true,
+  "data_license": "CC-BY-4.0",
+  "code_license": "MIT",
+  "paper_copyright_retained": true,
+  "content_scan": "No credential patterns, private repository URLs or local paths in all staged files and decoded gzip/zip payloads.",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 165,
+      "sha256": "f8638fba002b6ba5692a10232f541acacf15c951026010631e5e7f2b7e176d63"
+    },
+    {
+      "path": ".github/workflows/offline.yml",
+      "bytes": 1735,
+      "sha256": "98b7ef635a3932c559a247a2f58cd05be8c1a2c954685bf7e37669a359b7b54d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 119,
+      "sha256": "2fcf427c8ac5038aa2099c66a98f632007a8b5a16c906878109ed1f4a625c6b7"
+    },
+    {
+      "path": "CITATION.bib",
+      "bytes": 374,
+      "sha256": "13c57ba0aace933262833249df5f1b0c56b461bdcbdbb600466feac0be04252d"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 764,
+      "sha256": "dac34282105b76727d9fd456759c461f30b17baa246338ff9fadb87ad711e836"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 865,
+      "sha256": "00700fd696f91738e094b7f9ee85a4e600b935433f28ef83cc31887b369413d4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1077,
+      "sha256": "22aeedf7d64da2b6c55344b65fb06ec3f49e133e6adf5fce95e60c6ab69f05ab"
+    },
+    {
+      "path": "LICENSES.md",
+      "bytes": 1602,
+      "sha256": "e4cd79df279b4aabee533a90b9fee56be3d15c10f3ac20bbd2284b066bcb4ef0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20637,
+      "sha256": "f04fc3a9529bd9a50aac3533c5b1bd6271ba0f3bc372232785e298e6de42bd53"
+    },
+    {
+      "path": "assets/balanced-accuracy.png",
+      "bytes": 198016,
+      "sha256": "1cd0892dd39f9d0e89cce343f823f699f9f9b5ded1776d340b7583533a100f21"
+    },
+    {
+      "path": "assets/balanced-accuracy.svg",
+      "bytes": 15565,
+      "sha256": "e4fb8e79575618f499c87a55038b2ad6d1b906675a125a510fd597ba8fd8a156"
+    },
+    {
+      "path": "assets/figure-data.json",
+      "bytes": 5189,
+      "sha256": "ea8fd07b7ddc20ec2ec5e37c0a9e65e74c5ee8c3aa8bc17264cc7562ecb05848"
+    },
+    {
+      "path": "assets/figure-manifest.json",
+      "bytes": 1004,
+      "sha256": "939236d8115b1de33cf0694196c74d2063216fc4d536d77a0f3701ac8a1a6b89"
+    },
+    {
+      "path": "assets/hero.svg",
+      "bytes": 3518,
+      "sha256": "b2c89710f0327d7914f5105dfd7f7e2ba04d3146a1b3d486247e53d5d052beb4"
+    },
+    {
+      "path": "assets/model-dots/clef_choice.svg",
+      "bytes": 166,
+      "sha256": "26f888997d1d1ca64ed57cbb45053ca6361e0dbbccda914046d2d742d1b40a21"
+    },
+    {
+      "path": "assets/model-dots/clef_flash_choice.svg",
+      "bytes": 172,
+      "sha256": "bebb7488c409a78a3e0071a36b623a6b94166cb19e0c7d9a746cc1d13d188aa6"
+    },
+    {
+      "path": "assets/model-dots/jev_114_choice.svg",
+      "bytes": 168,
+      "sha256": "66e763af57638d40d0ea107ee7b1b4597848fc30303e2a23acf0adf3415ce7b7"
+    },
+    {
+      "path": "assets/model-dots/jev_choice.svg",
+      "bytes": 168,
+      "sha256": "dfb2d9bae2b9af48a827e145796bbb4837fe42a70cdecff1079bd6d22e25db0c"
+    },
+    {
+      "path": "assets/model-dots/luna_chat.svg",
+      "bytes": 175,
+      "sha256": "b5ac6c72cc48cfc5a25d0de4b6626db15ac883af64985b709608f5bba84b28ca"
+    },
+    {
+      "path": "assets/model-dots/luna_decisions_choice.svg",
+      "bytes": 178,
+      "sha256": "c9272f108347eda3bd1010a10851896d1cba9ffec779708ecac431d574e5ce8f"
+    },
+    {
+      "path": "assets/model-dots/pplx_decider_12_choice.svg",
+      "bytes": 174,
+      "sha256": "4bb09188ff19cc15a1ee778ab31e4a3ffbbf15a61dadb7f2ac1332226ebfc9e1"
+    },
+    {
+      "path": "assets/render_figures.py",
+      "bytes": 8949,
+      "sha256": "bd985f5bf33313357992431d96e38253b93532597025b535969b1c7271b555dd"
+    },
+    {
+      "path": "assets/wrong-recipient-errors.png",
+      "bytes": 316604,
+      "sha256": "e296464a57e469abe88ee07778f99a8b7d292a597f6ad0bf1a826ee702fcf7ad"
+    },
+    {
+      "path": "assets/wrong-recipient-errors.svg",
+      "bytes": 25343,
+      "sha256": "f4eac7593bd8d8a0ba7e01ed6a7ef18fe3dcb63c2534edc1d5e58159b972ed33"
+    },
+    {
+      "path": "data/domains/customer_support.jsonl",
+      "bytes": 19220200,
+      "sha256": "59bf71cdc100fed6ae4cdeb036d859b6487edf59f9065dfdf2f8ceb1a29e76d7"
+    },
+    {
+      "path": "data/domains/document_access.jsonl",
+      "bytes": 18306302,
+      "sha256": "97b09a2685f43868bec3b84269709bc38490c6f6bb7b77cb7344391c58cca665"
+    },
+    {
+      "path": "data/domains/internal_it.jsonl",
+      "bytes": 19340832,
+      "sha256": "e9061a20e8e9476e0fd4ff82f28cd1041f69eb562c2c50dc7b83660bb056a972"
+    },
+    {
+      "path": "data/domains/workflow_escalation.jsonl",
+      "bytes": 18653246,
+      "sha256": "e2545804b5c64e3e28fd9f1bcaffabc2b78a2dec903c71bbbc32b3ca0cdc9375"
+    },
+    {
+      "path": "data/goldfishbench.jsonl.gz",
+      "bytes": 1616882,
+      "sha256": "e31ac9ebb697a040bd6d543fc1a28851dfcd152e6ce2756f5bce425b838d2651"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 1787,
+      "sha256": "a5a3d265315cd131a3d357dfb4de69d5c52ac52e2cd4e72fe063fef746a6de67"
+    },
+    {
+      "path": "data/sample.jsonl",
+      "bytes": 46588,
+      "sha256": "21edf50ecde5d748cf1309475aa61a9182b1be63667d026db996aa8d161c827b"
+    },
+    {
+      "path": "data/statistics.json",
+      "bytes": 3445,
+      "sha256": "4344f82011d89eb9a9d29e958c8a66eeb09440b6311ed23013f9f5f6ae7e3f09"
+    },
+    {
+      "path": "docs/DATASET.md",
+      "bytes": 11813,
+      "sha256": "0dec9ca45c93086dc4efef7de081840355f527cf19cc74fe316041622756505f"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 8752,
+      "sha256": "e9311fad6781de36a9b741bd5168c183294c924606c4c808e409b0a39ee4a28c"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "bytes": 2478,
+      "sha256": "fb4fc4d2a316080a56942c0eb996ee986a979c8fa441c192bc7a9398ade1e838"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 10724,
+      "sha256": "458e764a100af25f40aee2096c0a568fd46d559166a6b60dc57d604334c9a976"
+    },
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "paper/IEEEtran.bst",
+      "bytes": 57748,
+      "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f"
+    },
+    {
+      "path": "paper/IEEEtran.cls",
+      "bytes": 281957,
+      "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7"
+    },
+    {
+      "path": "paper/README.md",
+      "bytes": 1498,
+      "sha256": "3a85166d310b5e663db233190c74d06c116e13a6fb69df0ff6e51a1393679d5a"
+    },
+    {
+      "path": "paper/figures/goldfish-extended-need.pdf",
+      "bytes": 68033,
+      "sha256": "e544d16a8d180800fa779ba7ae8e4dee2870d9e6121253f2d7beef80bbe9b9c0"
+    },
+    {
+      "path": "paper/figures/goldfish-extended-performance.pdf",
+      "bytes": 70758,
+      "sha256": "918052e3e1aec9a9a654ea21c69884adfabbbf0ebc2202ba83efeed41c07fd3f"
+    },
+    {
+      "path": "paper/figures/goldfish-extended-rhetoric.pdf",
+      "bytes": 66720,
+      "sha256": "a1f02e607e23357c98fca0108e72bdcbd68d89b02cc0b826fd1ff1b4e38ecc94"
+    },
+    {
+      "path": "paper/paper.bbl",
+      "bytes": 5086,
+      "sha256": "663280839024e74ed9fd4855ea6fca4e0b2b4e2e84b6adb254735907c723353e"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "bytes": 293622,
+      "sha256": "ba2f5d8b05b43b32d2bda1f61db74728b3222ed0e3afdcd1abcac8135851f69d"
+    },
+    {
+      "path": "paper/paper.tex",
+      "bytes": 37567,
+      "sha256": "57187e9050a9b4f7725856e093c801316641bcac1b09072e793c13ee136d9876"
+    },
+    {
+      "path": "paper/references.bib",
+      "bytes": 4623,
+      "sha256": "9315025ec3beaecd1d86c04c8e6be4275d02708e1b6bf14136095299bbb6ebb3"
+    },
+    {
+      "path": "paper/source.zip",
+      "bytes": 435485,
+      "sha256": "ba1f13ded3a07764fe2eb1907a285b09f6b7c7bdef8d72c0bf254ce8119a9fc2"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 476,
+      "sha256": "2d68712f160727bc38990804bee72665def45d9e3974035a9afd47270d5c87f1"
+    },
+    {
+      "path": "results/predictions/clef_choice.jsonl.gz",
+      "bytes": 489837,
+      "sha256": "2ef104715dbd65771b8501585e783e47c1b46ce83c34e4e2d34a4bb7f2fe6726"
+    },
+    {
+      "path": "results/predictions/clef_flash_choice.jsonl.gz",
+      "bytes": 490335,
+      "sha256": "de9d4aeadb1d0faeab3a6f5f16329e000d0dc520be321950c65ad1ca4dbce7d1"
+    },
+    {
+      "path": "results/predictions/jev_114_choice.jsonl.gz",
+      "bytes": 490573,
+      "sha256": "0f701a5ac17d833ef9076cd52d1255a2416667b393ea8b736e7ee0f0190bb2b7"
+    },
+    {
+      "path": "results/predictions/jev_choice.jsonl.gz",
+      "bytes": 490251,
+      "sha256": "ceb68eb1c8c0a469368c6946a1f002053a6d8a344e2a16553c33bff535680ad0"
+    },
+    {
+      "path": "results/predictions/luna_chat.jsonl.gz",
+      "bytes": 490286,
+      "sha256": "386c38200622ac6d793cd245c422b59a1698f47aa60b04756bda64ee7daccfd1"
+    },
+    {
+      "path": "results/predictions/luna_decisions_choice.jsonl.gz",
+      "bytes": 489721,
+      "sha256": "a3ce23848ecbdbb70372308c9747bb6a81783be3bbc4ec10f43a7017b551e503"
+    },
+    {
+      "path": "results/predictions/manifest.json",
+      "bytes": 38626,
+      "sha256": "a981aa12c360d233f819f7cb6d095488ab09fa6534a86f512368e57a1cbe2115"
+    },
+    {
+      "path": "results/predictions/pplx_decider_12_choice.jsonl.gz",
+      "bytes": 488821,
+      "sha256": "c5bf2601c3891dfaa080585cec852076b95d38796f5cf267e74b2f44d6fda139"
+    },
+    {
+      "path": "results/recomputed-point-estimates.json",
+      "bytes": 1867,
+      "sha256": "5be909ae2c69b901c60407b87c531d21201e1b257953ac72114dee381e77c518"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 2835250,
+      "sha256": "df6f21542def1f6fe0213b767c430918707d79e37a98dfd3e1c40700e1d58d15"
+    },
+    {
+      "path": "schemas/item.schema.json",
+      "bytes": 7148,
+      "sha256": "74b2707664d429100b994437071eab94dac0f9ddc9f4bf34c11d9d0dd44be7ba"
+    },
+    {
+      "path": "src/goldfishbench/__init__.py",
+      "bytes": 267,
+      "sha256": "dd5bbb46fe9b464f87120fba0180dfe4a40421a1c2b92a55ff757862a5c27196"
+    },
+    {
+      "path": "src/goldfishbench/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/goldfishbench/cli.py",
+      "bytes": 2980,
+      "sha256": "ee939cfc100906f325c514434c52aec997395cbed8dfc4d48fd3f813f17772c3"
+    },
+    {
+      "path": "src/goldfishbench/data.py",
+      "bytes": 11427,
+      "sha256": "35a7bdff57eb2eeecc1a7c6dac7671703146add8ea546d0a3b9e769ed5b044ec"
+    },
+    {
+      "path": "src/goldfishbench/metrics.py",
+      "bytes": 12706,
+      "sha256": "460b9f4ab8fd1cbb21c796df6c9f573a8abf441cdc27c4fe398da6bb3401becf"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "bytes": 18571,
+      "sha256": "b6e6c19561b36785a13aacec0fc7006ab84fcf4272d4a19eac1daeb4979a7771"
+    },
+    {
+      "path": "tools/verify_published_results.py",
+      "bytes": 4632,
+      "sha256": "4e62aebae0efcdb36ef3fb32194f545d70cb9d69829d99d2269adee1937d1d3b"
+    },
+    {
+      "path": "tools/verify_release.py",
+      "bytes": 1018,
+      "sha256": "6bf118203e9b379082fe723889f8eb4a60f32d02f76795861870de71e24589f1"
+    }
+  ]
+}

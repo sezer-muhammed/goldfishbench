@@ -1,0 +1,132 @@
+{
+  "all_adjudications_pending": true,
+  "annotation_status": "agent_authored_programmatically_checked_draft",
+  "canonical_action_labels_all_rows": {
+    "NO": 8352,
+    "YES": 2784
+  },
+  "cells_all_rows": {
+    "N0_S0": 2784,
+    "N0_S1": 2784,
+    "N1_S0": 2784,
+    "N1_S1": 2784
+  },
+  "component_families": 133,
+  "component_query_truth_differs_from_canonical_action_rows": 798,
+  "component_rendered_worlds": 1596,
+  "core_cells": {
+    "N0_S0": 1986,
+    "N0_S1": 1986,
+    "N1_S0": 1986,
+    "N1_S1": 1986
+  },
+  "core_query_labels_by_tactic": {
+    "name_property_pressure": {
+      "NO": 1986,
+      "YES": 662
+    },
+    "neutral_direct": {
+      "NO": 1986,
+      "YES": 662
+    },
+    "urgency_saturation": {
+      "NO": 1986,
+      "YES": 662
+    }
+  },
+  "dataset_uncompressed_bytes": 75520580,
+  "domains": {
+    "customer_support": 2832,
+    "document_access": 2700,
+    "internal_it": 2856,
+    "workflow_escalation": 2748
+  },
+  "duplicate_audit": {
+    "exact_duplicate_group_examples": [],
+    "exact_visible_payload_duplicate_excess": 0,
+    "exact_visible_payload_duplicate_groups": 0,
+    "exact_visible_payload_duplicate_rows": 0,
+    "limitation": "Candidate-scoped template-similarity diagnostic, not an exhaustive all-pairs semantic deduplication. Repeated renderings/components are intentional and retained; no rows removed.",
+    "near_duplicate_candidate_pairs_compared": 2430,
+    "near_duplicate_candidate_scope": "Y, N1_S0, neutral_direct; all within-topic pairs in precision source and within-domain pairs in older source; policy/options excluded",
+    "near_duplicate_metric": "word-trigram set Jaccard >= 0.90",
+    "near_duplicate_pair_examples": [],
+    "near_duplicate_pairs_at_threshold": 0,
+    "normalized_collision_group_examples": [],
+    "normalized_signature_rule": "casefold; replace R-number IDs and numeric literals; tokenize words; policy/options excluded",
+    "normalized_variable_text_collision_groups": 0,
+    "normalized_variable_text_collision_rows": 0
+  },
+  "eligibility": "exploratory; not independently human-validated or confirmatory",
+  "families": 662,
+  "families_by_domain": {
+    "customer_support": 164,
+    "document_access": 163,
+    "internal_it": 168,
+    "workflow_escalation": 167
+  },
+  "families_by_source_version": {
+    "0.8.0-hardness": 32,
+    "0.9.0-goldfish-precision": 630
+  },
+  "human_semantic_reviews_completed": 0,
+  "option_orders_all_rows": {
+    "NO,YES": 5664,
+    "YES,NO": 5472
+  },
+  "option_orders_by_predicate": {
+    "N": {
+      "NO,YES": 816,
+      "YES,NO": 780
+    },
+    "S": {
+      "NO,YES": 816,
+      "YES,NO": 780
+    },
+    "Y": {
+      "NO,YES": 4032,
+      "YES,NO": 3912
+    }
+  },
+  "precision_operation_recipes": 15,
+  "precision_topic_clusters": 80,
+  "predicates": {
+    "N": 1596,
+    "S": 1596,
+    "Y": 7944
+  },
+  "query_labels_by_predicate": {
+    "N": {
+      "NO": 798,
+      "YES": 798
+    },
+    "S": {
+      "NO": 798,
+      "YES": 798
+    },
+    "Y": {
+      "NO": 5958,
+      "YES": 1986
+    }
+  },
+  "release_version": "1.0.0",
+  "rendered_worlds": 7944,
+  "rows": 11136,
+  "semantic_worlds": 2648,
+  "source_versions": {
+    "0.8.0-hardness": 1152,
+    "0.9.0-goldfish-precision": 9984
+  },
+  "splits": {
+    "generalization": 11136
+  },
+  "tactics": {
+    "name_property_pressure": 3712,
+    "neutral_direct": 3712,
+    "urgency_saturation": 3712
+  },
+  "tracks": {
+    "components": 3192,
+    "core": 7944
+  }
+}

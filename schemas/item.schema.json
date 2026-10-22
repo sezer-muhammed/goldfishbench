@@ -1,0 +1,369 @@
+{
+  "$id": "https://github.com/sezer-muhammed/goldfishbench/blob/main/schemas/item.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "annotation": {
+      "additionalProperties": false,
+      "properties": {
+        "adjudication_status": {
+          "const": "pending"
+        },
+        "adjudicator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ambiguity_flags": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "human_validated": {
+          "const": false
+        },
+        "reviewer_1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewer_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "const": "agent_authored_programmatically_checked_draft"
+        }
+      },
+      "required": [
+        "status",
+        "human_validated",
+        "reviewer_1",
+        "reviewer_2",
+        "adjudicator",
+        "adjudication_status",
+        "ambiguity_flags"
+      ],
+      "type": "object"
+    },
+    "benchmark": {
+      "const": "goldfish"
+    },
+    "canonical_action_gold": {
+      "type": "boolean"
+    },
+    "cell": {
+      "type": "string"
+    },
+    "component_panel": {
+      "type": "boolean"
+    },
+    "core_scope": {
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "customer_support",
+        "internal_it",
+        "document_access",
+        "workflow_escalation"
+      ]
+    },
+    "equivalence_group": {
+      "type": "string"
+    },
+    "family_id": {
+      "type": "string"
+    },
+    "generator": {
+      "required": [
+        "version",
+        "seed",
+        "template_id",
+        "recipient_pool"
+      ],
+      "type": "object"
+    },
+    "gold_derivation": {
+      "required": [
+        "facts",
+        "operator",
+        "predicate",
+        "rule",
+        "status"
+      ],
+      "type": "object"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "latent_facts": {
+      "additionalProperties": false,
+      "properties": {
+        "A": {
+          "type": "boolean"
+        },
+        "C": {
+          "type": "boolean"
+        },
+        "N": {
+          "type": "boolean"
+        },
+        "U": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "N",
+        "C",
+        "U",
+        "A"
+      ],
+      "type": "object"
+    },
+    "latent_world_id": {
+      "type": "string"
+    },
+    "operation_recipe_id": {
+      "type": "string"
+    },
+    "option_mapping": {
+      "additionalProperties": false,
+      "properties": {
+        "NO": {
+          "const": "NO"
+        },
+        "YES": {
+          "const": "YES"
+        }
+      },
+      "required": [
+        "YES",
+        "NO"
+      ],
+      "type": "object"
+    },
+    "paired_baseline_item_id": {
+      "type": "string"
+    },
+    "paired_world_id": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "polarity": {
+      "type": "string"
+    },
+    "primary_core": {
+      "type": "boolean"
+    },
+    "primary_target": {
+      "type": "boolean"
+    },
+    "query_ast": {
+      "additionalProperties": false,
+      "properties": {
+        "operator": {
+          "const": "identity"
+        },
+        "predicate": {
+          "enum": [
+            "N",
+            "S",
+            "Y"
+          ]
+        }
+      },
+      "required": [
+        "operator",
+        "predicate"
+      ],
+      "type": "object"
+    },
+    "query_truth_gold": {
+      "type": "boolean"
+    },
+    "recipient_profile": {
+      "type": "string"
+    },
+    "relations": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "release_version": {
+      "const": "1.0.0"
+    },
+    "rendered_formulation": {
+      "type": "string"
+    },
+    "representation": {
+      "type": "string"
+    },
+    "scenario_specification": {
+      "type": "object"
+    },
+    "semantic_world_id": {
+      "type": "string"
+    },
+    "source": {
+      "additionalProperties": false,
+      "properties": {
+        "license": {
+          "const": "CC-BY-4.0"
+        },
+        "original_item_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "provenance": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "source_item_id": {
+          "type": "string"
+        },
+        "source_scenario_id": {
+          "type": "string"
+        },
+        "source_split": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "reference",
+        "source_item_id",
+        "source_scenario_id",
+        "source_split",
+        "provenance",
+        "license",
+        "original_item_sha256"
+      ],
+      "type": "object"
+    },
+    "source_scenario_id": {
+      "type": "string"
+    },
+    "split": {
+      "const": "generalization"
+    },
+    "tactic": {
+      "type": "string"
+    },
+    "topic_cluster_id": {
+      "type": "string"
+    },
+    "track": {
+      "enum": [
+        "core",
+        "components"
+      ]
+    },
+    "transformation_type": {
+      "type": "string"
+    },
+    "visible": {
+      "additionalProperties": false,
+      "properties": {
+        "item": {
+          "type": "string"
+        },
+        "options": {
+          "oneOf": [
+            {
+              "const": [
+                "YES",
+                "NO"
+              ]
+            },
+            {
+              "const": [
+                "NO",
+                "YES"
+              ]
+            }
+          ]
+        },
+        "policy": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "recipient": {
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "description"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "policy",
+        "item",
+        "recipient",
+        "question",
+        "options"
+      ],
+      "type": "object"
+    },
+    "world_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "item_id",
+    "family_id",
+    "world_id",
+    "semantic_world_id",
+    "latent_world_id",
+    "benchmark",
+    "track",
+    "split",
+    "domain",
+    "source_scenario_id",
+    "phase",
+    "cell",
+    "query_ast",
+    "query_truth_gold",
+    "canonical_action_gold",
+    "gold_derivation",
+    "latent_facts",
+    "visible",
+    "option_mapping",
+    "representation",
+    "tactic",
+    "recipient_profile",
+    "polarity",
+    "rendered_formulation",
+    "relations",
+    "paired_baseline_item_id",
+    "paired_world_id",
+    "equivalence_group",
+    "transformation_type",
+    "generator",
+    "annotation",
+    "source",
+    "release_version"
+  ],
+  "title": "GoldfishBench release item v1.0.0",
+  "type": "object"
+}
